@@ -119,9 +119,7 @@ $page_title = "myHealth Summary";
                                 </div>
                             <?php endforeach; ?>
                         </div>
-                        <p class="data-timestamp">
-                            Last updated: <?php echo date('M j, Y g:i A', strtotime($imms['retrieved_at'])); ?>
-                        </p>
+
                     <?php else: ?>
                         <p class="empty-state">No immunization records available</p>
                     <?php endif; ?>
