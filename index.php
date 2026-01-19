@@ -24,7 +24,7 @@ $page_title = "myHealth Summary";
             <?php if ($patient): ?>
                 <p class="patient-info">
                     <?php echo htmlspecialchars($patient['name']); ?> • 
-                    Born <?php echo date('M j, Y', strtotime($patient['dob'])); ?>
+                    Born <?php echo date('j M, Y', strtotime($patient['dob'])); ?>
                 </p>
             <?php endif; ?>
         </div>
@@ -113,7 +113,7 @@ $page_title = "myHealth Summary";
                                         </span>
                                     </div>
                                     <div class="imm-details">
-                                        <p class="imm-date"><?php echo date('M j, Y', strtotime($imm['date'])); ?></p>
+                                        <p class="imm-date"><?php echo date('j M, Y', strtotime($imm['date'])); ?></p>
                                         <p class="imm-lot">Lot: <?php echo htmlspecialchars($imm['lot']); ?></p>
                                     </div>
                                 </div>
